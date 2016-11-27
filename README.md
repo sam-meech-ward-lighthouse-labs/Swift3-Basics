@@ -1,6 +1,8 @@
 # Swift 3
 In 2014 Apple unexpectedly announced an entirely new programming language, Swift. This language has matured and grown over the past 2 years. It has become the prefered language for all apple programming and since being open sourced in 2015, is now a popular server side language.
 
+To use `Swift 3` you must be using Xcode 8.0 and iOS 10 as your base SDK.
+
 ## Playgrounds
 
 Playgrounds are simple 'Live Coding' envoromnets. This means you can see the results of your code as you write it.
