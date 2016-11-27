@@ -20,12 +20,18 @@ struct SlidingDoor: Door {
     
     func open() {
         // Slide to open
+        print("Slide To Open")
     }
     
     func close() {
         // Slide to close
+        print("Slide To Close")
     }
     
 }
+
+let aDoor: Door = SlidingDoor()
+aDoor.open()
+aDoor.close()
 
 //: [Next](@next)

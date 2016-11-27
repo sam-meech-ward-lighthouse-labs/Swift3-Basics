@@ -30,6 +30,7 @@ print(greeting)
  
  But what about those times when we don't know the value for a variable and we need to set something to nil? Like if we're tracking the user's location but can't get any location data:
  */
+import CoreLocation
 
 var location: CLLocation = CLLocation(latitude: 0, longitude: 0)
 
@@ -57,6 +58,8 @@ var optionalLocation: CLLocation? = nil
 var instructor: String? = "Sam"
 
 print(instructor)
+//: > If you see a warning here, it's because Swift doesn't want to print nil if instructor doesn't have a value. We can suppress this warning by giving swift a default value to use when `instructor` is nil, as shown below. For more information on this, read the [Nil-Coalescing Operator](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/BasicOperators.html) section of the Swift Language Guide.
+print(instructor ?? "Instruct is nil")
 
 /*:
  Since this is a container, not an actual value, to get at the value we have to unwrap it.

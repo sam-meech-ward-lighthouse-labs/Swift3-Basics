@@ -35,7 +35,7 @@ for index in 0..<5 {
  We can also itterate over an array.
  */
 
-let instructors = ["Sam", "Danny", "Cory"]
+let instructors = ["Nikita", "Shahin"]
 for instructor in instructors {
     print(instructor) // Sam Danny Cory
 }
@@ -44,8 +44,8 @@ for instructor in instructors {
  If you need the integer index of each item as well as its value, use the enumerated() method to iterate over the array instead. For each item in the array, the enumerated() method returns a tuple composed of an integer and the item.
  */
 
-let instructors = ["Sam", "Danny", "Cory"]
-for (index, instructor) in instructors.enumerated() {
+let moreInstructors = ["Sam", "Danny", "Cory"]
+for (index, instructor) in moreInstructors.enumerated() {
     print("\(index): \(instructor)") // 1: Sam 2: Danny 3: Cory
 }
 

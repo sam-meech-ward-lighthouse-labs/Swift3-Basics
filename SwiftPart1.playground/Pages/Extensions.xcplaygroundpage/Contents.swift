@@ -6,7 +6,7 @@
  Extensions are like Obj-C’s categories. Use them to add functionality to existing types, even types that you didn't write yourself.
  */
 
-import Foundation
+import CoreGraphics
 
 extension CGRect {
     func prettyPrint() {

@@ -42,7 +42,7 @@ name += " Meech-Ward"
 let firstName = "Sam"
 let lastName = "Meech-Ward"
 let favoriteSwiftVersion = 3
-let greeting = "\(firstName) \(lastName)'s favorite version of swift is Swift\(favoriteSwiftVersion)"
+let swiftGreeting = "\(firstName) \(lastName)'s favorite version of swift is Swift\(favoriteSwiftVersion)"
 
 /*:
  You can also inseart expressions.
@@ -59,10 +59,10 @@ let message = "\(multiplier) times 2.5 is \(Double(multiplier) * 2.5)"
  For example, if we wanted to convert a string to all uppercase letters we could call `uppercased()` on the string.
  */
 
-let myString = "My String"
-print(myString.uppercased())
-print(myString.lowercased())
-print(myString.isEmpty())
+let anotherString = "My String"
+print(anotherString.uppercased())
+print(anotherString.lowercased())
+print(anotherString.isEmpty)
 
 /*:
  If you're need to modify or manipulate a string in some way, check the existing methods on `String` to see if one of them does what you want.

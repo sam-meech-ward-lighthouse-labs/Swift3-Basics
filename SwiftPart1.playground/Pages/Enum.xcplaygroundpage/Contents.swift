@@ -18,14 +18,17 @@
  ```
  */
 
-import Foundation
+//import Foundation
+//
+//enum Suit: String {
+//    case clubs = "Clubs"
+//    case diamonds = "Diamonds"
+//    case hearts = "Hearts"
+//    case spades = "Spades"
+//}
+//
+//let suit = Suit.clubs
 
-enum Suit: String {
-    case clubs = "Clubs"
-    case diamonds = "Diamonds"
-    case hearts = "Hearts"
-    case spades = "Spades"
-}
 
 /*:
  They can even have methods associated with them.
@@ -50,6 +53,9 @@ enum Suit: String {
         }
     }
 }
+
+let suit = Suit.hearts
+suit.simpleDescription()
 
 /*:
  An instance of an enumeration member can have associated values. This is really handy when you want a variable value to be assicated with an enums constant state.

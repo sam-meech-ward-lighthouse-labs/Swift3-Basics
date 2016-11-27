@@ -24,7 +24,7 @@ func welcome(name: String, day: Int) -> String {
     return "Hello \(name), today is the \(day)th."
 }
 
-let result = welcome("Anna", day: 11);
+let result = welcome(name: "Anna", day: 11);
 
 //: ### Comparrision:
 
@@ -41,6 +41,13 @@ func fullName(fromFirstName firstName: String, andLastName lastName: String) -> 
     let fullName = firstName + " " + lastName
     return fullName
 }
+
+/*:
+ Swift Function Signature:
+ ```swift
+ func functionName(firstArguemntLabel firstArguemntName: FirstArgumentType) -> ReturnType
+ ```
+ */
 
 
 
@@ -86,12 +93,13 @@ let makeGreetingClosure = { (name: String) -> (String) in
  Closures are first class citizens so you can pass them around just like anything else.
  */
 
-func printGreeting(greeting: (String) -> (String)) {
+func printGreeting(_ greeting: (String) -> (String)) {
     let string = greeting("Sam")
     print(string)
 }
 
 printGreeting(makeGreetingClosure)
+//: > We have omitted the `greeting:` argument label here because the function `printGreeting` is descriptive enough that we shouldn't feel the need to see the word greeting again. We can omit an arguement's label by specifying an `_` where the label should be. Read the [Function Argument Labels and Parameter Names](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Functions.html#//apple_ref/doc/uid/TP40014097-CH10-ID166) section of the Swift Programming Guide.
 
 //: ### Practical example
 
@@ -110,6 +118,8 @@ print(numbersMultipliedByThree)
 
 numbers.map { number in number * 3 }
 
-[More about closures](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Closures.html#//apple_ref/doc/uid/TP40014097-CH11-ID94)
+/*:
+ [More about closures](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Closures.html#//apple_ref/doc/uid/TP40014097-CH11-ID94)
+ */
 
 //: [Next](@next)

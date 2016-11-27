@@ -10,7 +10,8 @@
         <page name='Loops'/>
         <page name='FunctionsAndClosures'/>
         <page name='Tuples'/>
-        <page name='ClassesAndStructs'/>
+        <page name='Classes'/>
+        <page name='Structs'/>
         <page name='Enum'/>
         <page name='Protocols'/>
         <page name='Extensions'/>
