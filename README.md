@@ -127,7 +127,7 @@ If you're need to modify or manipulate a string in some way, check the existing 
 By default, all variables and constants in swift must have a value. This means that they can never be `nil` like they could in Objective-C. This is a really good thing because you no longer have to make sure that a variable has a value before using it.
 
 ```objective-c
-NSNumber *greeting = @"Hello Lighthouse Labs!";
+NSString *greeting = @"Hello Lighthouse Labs!";
 
 if (greeting) { 
 	NSLog(@"%@", greeting);
